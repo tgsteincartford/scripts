@@ -11,7 +11,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
   - _TODO: Enter the playbook file._
 
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
@@ -37,8 +37,8 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.0.0.14  | Linux            |
 | ElkServer| SSH      | 10.0.0.4   |                  |
-| Web-1    |          |            |                  |
-| Web-2    |          |            |                  |
+| Web-1    |  SSH     | 10.0.0.1   |                  |
+| Web-2    |  SSH     | 10.0.0.2   |                  |
 
 ### Access Policies
 
@@ -95,4 +95,5 @@ _TODO: Answer the following questions to fill in the blanks:_
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
 - _Which URL do you navigate to in order to check that the ELK server is running?
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._ $ansible-playbook {type of beat-playbook.yml}
+$ansible-playbook update-metricbeat
